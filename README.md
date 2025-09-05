@@ -1,132 +1,98 @@
-Wine Quality Prediction
+# 🍷 Wine Quality Prediction Using Linear Regression
 
-Project Overview
+This repository contains a comprehensive analysis and predictive modeling project on the **Wine Reviews** dataset sourced from Kaggle. The primary objective is to predict wine quality ratings using Linear Regression by applying data preprocessing, exploratory data analysis, and machine learning techniques with Python.
 
+---
 
+## 📖 Project Overview
 
-This project leverages the Wine Quality dataset from Kaggle to predict the quality of wine based on its physicochemical properties. By cleaning the data, engineering detailed features, and visualizing key variables, the project builds a Linear Regression model to estimate wine quality scores accurately.
+The project workflow includes:
 
+- Cleaning and preprocessing the dataset to handle missing values and transform categorical variables.
+- Conducting exploratory data analysis (EDA) to uncover meaningful insights and visualize feature distributions.
+- Building and evaluating a Linear Regression model to predict wine quality scores based on relevant features.
 
+---
 
-Dataset
+## 📂 Dataset Details
 
+The dataset consists of over 130,000 wine reviews, with key attributes including:
 
+- `country`: Country of origin
+- `province`: Region within the country
+- `variety`: Grape variety
+- `winery`: Producer name
+- `points`: Wine rating (target variable)
+- `price`: Wine price
+- `description`: Textual description of the wine (not used in modeling)
 
-The dataset contains chemical measurements such as acidity, sugar levels, pH, and alcohol content, alongside expert-assigned quality ratings for each wine sample.
+---
 
+## ⚠️ Dataset Availability
 
+Due to GitHub file size restrictions, the raw dataset CSV file is **not included** in this repository.
 
-Features \& Approach
+### To obtain the dataset:
 
+1. Visit the Kaggle dataset page:  
+   [Wine Reviews Dataset on Kaggle](https://www.kaggle.com/datasets/zynicide/wine-reviews)
 
+2. Download the `winemag-data-130k-v2.csv` file.
 
-Data Cleaning: Missing values were handled to ensure dataset completeness.
+3. Place the downloaded CSV file into the `data/` directory located at the root of this repository.
 
+---
 
-
-Feature Engineering: Columns were broken down into detailed features to capture more information.
-
-
-
-Visualization: Matplotlib was used to analyze variable relationships and their impact on wine quality.
-
-
-
-Modeling: A Linear Regression model was implemented with scikit-learn to predict wine quality from chemical properties.
-
-
-
-Technologies Used
-
-
-
-Python
-
-
-
-Pandas
-
-
-
-Matplotlib
-
-
-
-Scikit-learn
-
-
-
-NumPy
-
-
-
-Installation
+## 🗂 Repository Structure
+```
+wine-quality-prediction/
+│
+├── data/                      # Folder to hold the dataset (not uploaded to GitHub)
+│   └── .gitkeep               # Empty placeholder file to keep this folder tracked by Git
+│
+├── p2.ipynb                   # Jupyter notebook with full analysis and Linear Regression model
+│
+├── README.md                  # Project documentation with instructions and dataset link
+│
+└── .gitignore                 # File specifying which files/folders Git should ignore
+```
+---
 
 
+## 🛠 Technologies & Libraries
 
-Clone the repository:
+- **Python 3**  
+- **Pandas**: Data manipulation and preprocessing  
+- **Matplotlib**: Data visualization  
+- **Scikit-learn**: Machine learning (Linear Regression)
 
+---
 
+## 🚀 Getting Started
 
-git clone <repository-url>
+Follow these steps to set up and run the project locally:
 
-cd <repository-folder>
+1. Clone the repository: git clone https://github.com/yourusername/wine-quality-prediction.git
+cd wine-quality-prediction
 
+2.Download the dataset as explained above and place the CSV file in the data/ folder.
 
-
-
-
-Install dependencies:
-
-
+3.Install project dependencies:
 
 pip install -r requirements.txt
 
 
+4.Launch the Jupyter Notebook to explore the analysis and modeling:🙏 Acknowledgments
 
-Usage
+Dataset provided by zackthoutt
+ on Kaggle.
 
+Inspired by data science and machine learning techniques for wine quality prediction.
 
+jupyter notebook p2.ipynb
+---
+🤝 Contribution & Issues
 
-Run the provided Jupyter notebook or Python script to perform the following steps:
-
-
-
-Data preprocessing and cleaning
-
-
-
-Feature engineering
-
-
-
-Data visualization
-
-
-
-Model training and evaluation
-
-
-
-Results
-
-
-
-The Linear Regression model reveals how individual chemical features influence wine quality and enables accurate quality predictions for new samples.
-
-
-
-Future Improvements
-
-
-
-Explore advanced regression and classification models
-
-
-
-Optimize model performance through hyperparameter tuning
-
-
-
-Integrate domain expertise for enhanced feature extraction
-
+Contributions, suggestions, and issue reports are warmly welcome. Feel free to open an issue or submit a pull request to enhance the project.
+---
+Thank you for exploring this project! For questions or collaboration, please contact [negiaman.py@gmail.com] or open an issue.
