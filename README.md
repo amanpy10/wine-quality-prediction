@@ -1,121 +1,101 @@
-🍷 Wine Reviews - Quality Prediction Using Linear Regression
+# 🍷 Wine Quality Prediction Using Linear Regression
 
-This project explores and analyzes the Wine Reviews dataset from Kaggle to predict wine quality scores (points) using machine learning. The goal is to build a Linear Regression model that estimates wine ratings based on attributes like price, country, variety, and other structured metadata.
+This repository contains a comprehensive analysis and predictive modeling project on the **Wine Reviews** dataset sourced from Kaggle. The primary objective is to predict wine quality ratings using Linear Regression by applying data preprocessing, exploratory data analysis, and machine learning techniques with Python.
 
-<br>
-📂 Dataset Overview
+---
 
-Source: Wine Reviews by zackthoutt on Kaggle
+## 📖 Project Overview
 
-Size: 130,000+ wine reviews
+The project workflow includes:
 
-File Types: CSV, JSON
+- Cleaning and preprocessing the dataset to handle missing values and transform categorical variables.
+- Conducting exploratory data analysis (EDA) to uncover meaningful insights and visualize feature distributions.
+- Building and evaluating a Linear Regression model to predict wine quality scores based on relevant features.
 
-Key Columns:
+---
 
-country: Country of origin
+## 📂 Dataset Details
 
-province: Region within the country
+The dataset consists of over 130,000 wine reviews, with key attributes including:
 
-variety: Type of grape used
+- `country`: Country of origin
+- `province`: Region within the country
+- `variety`: Grape variety
+- `winery`: Producer name
+- `points`: Wine rating (target variable)
+- `price`: Wine price
+- `description`: Textual description of the wine (not used in modeling)
 
-winery: Wine producer
+---
 
-points: Wine rating (target variable)
+## ⚠️ Dataset Availability
 
-price: Price of the wine
+Due to GitHub file size restrictions, the raw dataset CSV file is **not included** in this repository.
 
-description: Text review (not used in this model)
+### To obtain the dataset:
 
-<br>
-🛠️ Technologies Used
+1. Visit the Kaggle dataset page:  
+   [Wine Reviews Dataset on Kaggle](https://www.kaggle.com/datasets/zynicide/wine-reviews)
 
-Python 3
+2. Download the `winemag-data-130k-v2.csv` file.
 
-Pandas – data cleaning and manipulation
+3. Place the downloaded CSV file into the `data/` directory located at the root of this repository.
 
-Matplotlib – data visualization
+---
+## 🗂 Repository Structure
 
-Scikit-learn – model building and evaluation
-
-<br>
-🔍 Project Workflow
-1. Data Cleaning & Preprocessing
-
-Removed or filled missing values in critical columns (price, points, etc.)
-
-Converted categorical variables (country, variety, province) using encoding
-
-Filtered and selected features relevant to predicting wine ratings
-
-2. Exploratory Data Analysis (EDA)
-
-Visualized price distributions and correlations with ratings
-
-Identified top wine varieties and their average scores
-
-Analyzed feature relationships and variance
-
-3. Model Building
-
-Implemented Linear Regression using Scikit-learn
-
-Split data into training and testing sets
-
-Trained model on structured features
-
-4. Model Evaluation
-
-Used R² Score and Mean Squared Error (MSE) to evaluate model performance
-
-Compared actual vs predicted scores to check accuracy
-
-<br>
-📈 Results & Insights
-
-Linear Regression provided a basic yet interpretable model for score prediction.
-
-Features like price, variety, and country showed meaningful influence on wine ratings.
-
-Although not a highly complex model, this serves as a solid baseline for future improvements (e.g., advanced models, NLP on description).
-
-<br>
-✅ Future Improvements
-
-Incorporate Natural Language Processing (NLP) on the description column
-
-Use feature selection and regularization to improve model accuracy
-
-Try other regression models (Random Forest, Gradient Boosting, etc.)
-
-<br>
-📁 Folder Structure
 wine-quality-prediction/
-├── winemag-data-130k-v2.csv/   # Raw and cleaned dataset files
-├── p2.ipynb/                   # Jupyter notebook(s) with code
-├── README.md                   # Project documentation
+├── data/ # Directory to hold dataset CSV (not included)
+│ └── .gitkeep # Placeholder file to maintain folder in repo
+├── p2.ipynb # Jupyter Notebook with analysis and modeling
+├── README.md # This documentation file
+└── .gitignore # Specifies files and folders to ignore in Git
 
 
-<br>
-📌 How to Run
+---
 
-Clone the repository:
+## 🛠 Technologies & Libraries
 
-git clone https://github.com/yourusername/wine-quality-prediction.git
-cd wine-quality-prediction
+- **Python 3**  
+- **Pandas**: Data manipulation and preprocessing  
+- **Matplotlib**: Data visualization  
+- **Scikit-learn**: Machine learning (Linear Regression)
 
+---
 
-Install dependencies:
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/wine-quality-prediction.git
+   cd wine-quality-prediction
+Download the dataset as explained above and place the CSV file in the data/ folder.
+
+Install project dependencies:
 
 pip install -r requirements.txt
 
+Launch the Jupyter Notebook to explore the analysis and modeling:
 
-Run the notebook:
-Open notebooks/wine_regression.ipynb in Jupyter or VS Code and execute step by step.
+jupyter notebook p2.ipynb
+---
 
-<br>
-🙌 Acknowledgments
+🤝 Contribution & Issues:
 
-Dataset by zackthoutt
+Contributions, suggestions, and issue reports are warmly welcome. Feel free to open an issue or submit a pull request to enhance the project.
+---
+🙏 Acknowledgments
 
-Inspired by real-world wine recommendation systems and rating predictions
+Dataset provided by zackthoutt
+ on Kaggle.
+
+Inspired by data science and machine learning techniques for wine quality prediction.
+
+---
+Thank you for exploring this project! For questions or collaboration, please contact [amannegi.py@gmail.com
+] or open an issue.
+
+
+
