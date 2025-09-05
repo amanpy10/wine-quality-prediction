@@ -1,0 +1,22 @@
+# Ignore Jupyter notebook checkpoints folder
+.ipynb_checkpoints/
+
+# Ignore all files inside data folder
+data/*
+
+# But keep the data folder itself (by excluding .gitkeep or README inside data folder)
+!data/.gitkeep
+!data/README.md
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
