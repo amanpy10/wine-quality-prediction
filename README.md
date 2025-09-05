@@ -71,28 +71,32 @@ wine-quality-prediction/
 ## 🚀 Getting Started
 
 Follow these steps to set up and run the project locally:
-
+```
 1. Clone the repository: git clone https://github.com/yourusername/wine-quality-prediction.git
 cd wine-quality-prediction
 
 2.Download the dataset as explained above and place the CSV file in the data/ folder.
 
 3.Install project dependencies:
-
 pip install -r requirements.txt
 
-
-4.Launch the Jupyter Notebook to explore the analysis and modeling:🙏 Acknowledgments
+4.Launch the Jupyter Notebook to explore the analysis and modeling:
+jupyter notebook p2.ipynb
+```
+---
+🙏 Acknowledgments
 
 Dataset provided by zackthoutt
  on Kaggle.
 
 Inspired by data science and machine learning techniques for wine quality prediction.
 
-jupyter notebook p2.ipynb
+
 ---
 🤝 Contribution & Issues
-
+```
 Contributions, suggestions, and issue reports are warmly welcome. Feel free to open an issue or submit a pull request to enhance the project.
+```
 ---
 Thank you for exploring this project! For questions or collaboration, please contact [negiaman.py@gmail.com] or open an issue.
+
